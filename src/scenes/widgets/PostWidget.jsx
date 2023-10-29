@@ -35,7 +35,7 @@ const PostWidget = ({
   const primary = palette.primary.main;
 
   const patchLike = async () => {
-    const response = await fetch(`https://back-production-9bdf.up.railway.app//posts/${postId}/like`, {
+    const response = await fetch(`https://back-production-9bdf.up.railway.app/posts/${postId}/like`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${token}`,

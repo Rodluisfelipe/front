@@ -22,7 +22,7 @@ const UserWidget = ({ userId, picturePath }) => {
   const main = palette.neutral.main;
 
   const getUser = async () => {
-    const response = await fetch(`https://back-production-9bdf.up.railway.app//users/${userId}`, {
+    const response = await fetch(`https://back-production-9bdf.up.railway.app/users/${userId}`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
